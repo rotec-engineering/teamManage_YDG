@@ -1,0 +1,16 @@
+.headerLogoutBtn {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 2%;
+    height: 100%;
+
+}
+
+.logoutBtn {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #696969;
+    border: 0;
+}

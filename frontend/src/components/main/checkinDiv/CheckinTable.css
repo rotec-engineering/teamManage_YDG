@@ -1,0 +1,26 @@
+.checkinListTable {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-bottom: auto;*/
+    border: 2px solid darkgray;
+    border-collapse: collapse;
+}
+/*.checkinListTable tr:hover {*/
+/*    background-color: aliceblue;*/
+/*}*/
+.checkinListTable tbody tr:nth-child(2n+1){
+    background-color: #e1e1e1;
+}
+.checkinListTable tr th {
+    /*background-color: #e1e1e1;                      // 테이블 각 줄 색깔 중 진한 부분*/
+    color: white;
+    background-color: #a5a5a5;
+    border: 2px solid white;
+    padding: 1%;
+}
+.checkinListTable tr td {
+    border: 2px solid white;
+    padding: 1%;
+}

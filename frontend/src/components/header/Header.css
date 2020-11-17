@@ -1,0 +1,9 @@
+/*.headerBody:after {*/
+/*    clear: both;*/
+/*    display: block;*/
+/*    content: '';*/
+/*}*/
+.headerBody {
+    background-color: dimgray;
+    height: 70px;
+}
