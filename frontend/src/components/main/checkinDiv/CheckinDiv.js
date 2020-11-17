@@ -1,36 +1,22 @@
-import React, {Component} from 'react';
+import React from 'react';
 import CheckinTable from "./CheckinTable";
 import './CheckinDiv.css';
 
-class CheckinDiv extends Component {
-    state = {
-        name : "내부사용자"
+const CheckinDiv = () => {
+    const state = {
+        sortation : "내부사용자",
+        btnName : "입/퇴실"
     }
 
-    // handleChange = (e) => {
-    //     this.setState({
-    //         name : e.target.value
-    //     });
-    // }
-    //
-    // handleInsert = () => {
-    //     this.setState({
-    //         checkinList: this.state.names.concat(this.state.name),
-    //         name: ''
-    //     });
-    // }
+    return (
+        <div className="checkinDiv">
+            <p className="checkinSortation">{state.sortation}</p>
+            <button className="removeBtn">X</button>
+            <button className="checkinBtn">{state.btnName}</button>
 
-    render() {
-        return (
-            <div className="checkinDiv">
-                <p className="checkinSortation">{this.state.name}</p>
-                <button className="removeBtn">X</button>
-                <button className="checkinBtn">입/퇴실</button>
-
-                <CheckinTable />
-            </div>
-        );
-    }
-}
+            <CheckinTable />
+        </div>
+    );
+};
 
 export default CheckinDiv;

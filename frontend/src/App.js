@@ -7,25 +7,23 @@ import ManageEmployee from "./components/manage/employee/manageEmployee";
 import ManageTeam from "./components/manage/team/manageTeam";
 import './App.css';
 
-class App extends Component {
-    render() {
-        return (
-            <div className="App">
-                <BrowserRouter>
-                    <Header />
-                    <div>
-                        <SideMenu />
-                        <Switch>
-                            <Route path="/" exact component={Main} />
-                            <Route path="manageTeam" exact component={ManageTeam} />
-                            <Route path="manageEmployee" exact component={ManageEmployee} />
-                            {/*<Main />*/}
-                        </Switch>
-                    </div>
-                </BrowserRouter>
-            </div>
-        );
-    }
-}
+const App = () => {
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Header />
+                <div>
+                    <SideMenu />
+                    <Switch>
+                        <Route path="/" exact component={Main} />
+                        <Route path="manageTeam" exact component={ManageTeam} />
+                        <Route path="manageEmployee" exact component={ManageEmployee} />
+                        {/*<Main />*/}
+                    </Switch>
+                </div>
+            </BrowserRouter>
+        </div>
+    );
+};
 
 export default App;
