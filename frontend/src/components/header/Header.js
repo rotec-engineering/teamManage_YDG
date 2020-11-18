@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import HeaderLogo from "./HeaderLogo";
 import HeaderName from "./HeaderName";
 import HeaderLogoutBtn from "./HeaderLogoutBtn";
