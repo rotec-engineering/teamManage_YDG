@@ -7,8 +7,8 @@ const SideMenu = () => {
     const pathName = useLocation().pathname;
     const menus = [
         {name: '홈', path: '/'},
-        {name: '팀원관리', path: '/manageTeam'},
-        {name: '사원관리', path: '/manageEmployee'}
+        {name: '팀원관리', path: '/ManageTeam'},
+        {name: '사원관리', path: '/ManageEmployee'}
     ];
 
     return (
@@ -18,7 +18,7 @@ const SideMenu = () => {
                     <Link to = {menu.path} key={index} >
                         <SideMenuItem
                             menu = {menu}
-                            isActive={pathName === menu.path ? true : false}	// 현재 URL pathname과 객체에 담긴 path값 일치 여부 확인
+                            isActive={pathName === menu.path}	// 현재 URL pathname과 객체에 담긴 path값 일치 여부 확인
                         />
                         {console.log(pathName)}
                     </Link>
