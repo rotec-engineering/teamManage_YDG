@@ -7,7 +7,7 @@ const SideMenuItem = ({menu, isActive}) => {
             <p>{menu.name}</p>
         </div>
     ) : (
-        <div className="sideMenus">
+        <div className="sideMenusActive">
             <p>{menu.name}</p>
         </div>
     )

@@ -1,6 +1,13 @@
 .sideMenus {
     text-align: center;
     width: 100%;
-    color: white;
+    color: #767171;
+    font-size: 30px;
+}
+
+.sideMenusActive {
+    text-align: center;
+    width: 100%;
+    color: #d0cece;
     font-size: 30px;
 }
