@@ -3,6 +3,7 @@
     float: left;
     text-align: center;
     width: 35%;
+    min-width: 580px;
     height: 40%;
     border: 2px solid darkgray;
     border-radius: 2em;                     /* border-top-left-radius */
